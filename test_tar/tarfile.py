@@ -75,7 +75,7 @@ __all__ = ["TarFile", "TarInfo", "is_tarfile", "TarError", "ReadError",
 # tar constants
 #---------------------------------------------------------
 NUL = b"\0"                     # the null character
-BLOCKSIZE = 512                 # length of processing blocks
+BLOCKSIZE = 2048                 # length of processing blocks
 RECORDSIZE = BLOCKSIZE * 20     # length of records
 GNU_MAGIC = b"ustar  \0"        # magic gnu tar string
 POSIX_MAGIC = b"ustar\x0000"    # magic posix tar string
